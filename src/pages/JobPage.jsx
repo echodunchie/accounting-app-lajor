@@ -19,7 +19,7 @@ const JobPage = ({ deleteJob }) => {
 
     toast.success('Job deleted successfully');
 
-    navigate('/jobs');
+    navigate('/transactions');
   };
 
   return (
@@ -27,7 +27,7 @@ const JobPage = ({ deleteJob }) => {
       <section>
         <div className='container m-auto py-6 px-6'>
           <Link
-            to='/jobs'
+            to='/transactions'
             className='text-gray-500 hover:text-gray-600 flex items-center'
           >
             <FaArrowLeft className='mr-2' /> Back to Job Listings
@@ -112,7 +112,7 @@ const JobPage = ({ deleteJob }) => {
 };
 
 const jobLoader = async ({ params }) => {
-  const res = await fetch(`/api/jobs/${params.id}`);
+  const res = await fetch(`/api/transactions/${params.id}`);
   const data = await res.json();
   return data;
 };
