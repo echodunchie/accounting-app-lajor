@@ -40,7 +40,7 @@ const AddJobPage = ({ addJobSubmit }) => {
   };
 
   return (
-    <section className='bg-indigo-50'>
+    <section className='bg-gray-50'>
       <div className='container m-auto max-w-2xl py-24'>
         <div className='bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0'>
           <form onSubmit={submitForm}>
@@ -57,7 +57,7 @@ const AddJobPage = ({ addJobSubmit }) => {
                 id='type'
                 name='type'
                 className='border rounded w-full py-2 px-3'
-                required
+                requigray
                 value={type}
                 onChange={(e) => setType(e.target.value)}
               >
@@ -78,7 +78,7 @@ const AddJobPage = ({ addJobSubmit }) => {
                 name='title'
                 className='border rounded w-full py-2 px-3 mb-2'
                 placeholder='eg. Beautiful Apartment In Miami'
-                required
+                requigray
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
               />
@@ -112,7 +112,7 @@ const AddJobPage = ({ addJobSubmit }) => {
                 id='salary'
                 name='salary'
                 className='border rounded w-full py-2 px-3'
-                required
+                requigray
                 value={salary}
                 onChange={(e) => setSalary(e.target.value)}
               >
@@ -140,7 +140,7 @@ const AddJobPage = ({ addJobSubmit }) => {
                 name='location'
                 className='border rounded w-full py-2 px-3 mb-2'
                 placeholder='Company Location'
-                required
+                requigray
                 value={location}
                 onChange={(e) => setLocation(e.target.value)}
               />
@@ -197,7 +197,7 @@ const AddJobPage = ({ addJobSubmit }) => {
                 name='contact_email'
                 className='border rounded w-full py-2 px-3'
                 placeholder='Email address for applicants'
-                required
+                requigray
                 value={contactEmail}
                 onChange={(e) => setContactEmail(e.target.value)}
               />
@@ -222,7 +222,7 @@ const AddJobPage = ({ addJobSubmit }) => {
 
             <div>
               <button
-                className='bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline'
+                className='bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline'
                 type='submit'
               >
                 Add Job

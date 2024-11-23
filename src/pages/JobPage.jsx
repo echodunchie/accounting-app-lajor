@@ -28,14 +28,14 @@ const JobPage = ({ deleteJob }) => {
         <div className='container m-auto py-6 px-6'>
           <Link
             to='/jobs'
-            className='text-indigo-500 hover:text-indigo-600 flex items-center'
+            className='text-gray-500 hover:text-gray-600 flex items-center'
           >
             <FaArrowLeft className='mr-2' /> Back to Job Listings
           </Link>
         </div>
       </section>
 
-      <section className='bg-indigo-50'>
+      <section className='bg-gray-50'>
         <div className='container m-auto py-10 px-6'>
           <div className='grid grid-cols-1 md:grid-cols-70/30 w-full gap-6'>
             <main>
@@ -49,13 +49,13 @@ const JobPage = ({ deleteJob }) => {
               </div>
 
               <div className='bg-white p-6 rounded-lg shadow-md mt-6'>
-                <h3 className='text-indigo-800 text-lg font-bold mb-6'>
+                <h3 className='text-gray-800 text-lg font-bold mb-6'>
                   Job Description
                 </h3>
 
                 <p className='mb-4'>{job.description}</p>
 
-                <h3 className='text-indigo-800 text-lg font-bold mb-2'>
+                <h3 className='text-gray-800 text-lg font-bold mb-2'>
                   Salary
                 </h3>
 
@@ -76,13 +76,13 @@ const JobPage = ({ deleteJob }) => {
 
                 <h3 className='text-xl'>Contact Email:</h3>
 
-                <p className='my-2 bg-indigo-100 p-2 font-bold'>
+                <p className='my-2 bg-gray-100 p-2 font-bold'>
                   {job.company.contactEmail}
                 </p>
 
                 <h3 className='text-xl'>Contact Phone:</h3>
 
-                <p className='my-2 bg-indigo-100 p-2 font-bold'>
+                <p className='my-2 bg-gray-100 p-2 font-bold'>
                   {' '}
                   {job.company.contactPhone}
                 </p>
@@ -92,13 +92,13 @@ const JobPage = ({ deleteJob }) => {
                 <h3 className='text-xl font-bold mb-6'>Manage Job</h3>
                 <Link
                   to={`/edit-job/${job.id}`}
-                  className='bg-indigo-500 hover:bg-indigo-600 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block'
+                  className='bg-gray-500 hover:bg-gray-600 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block'
                 >
                   Edit Job
                 </Link>
                 <button
                   onClick={() => onDeleteClick(job.id)}
-                  className='bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block'
+                  className='bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block'
                 >
                   Delete Job
                 </button>
