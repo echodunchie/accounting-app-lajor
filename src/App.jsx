@@ -9,8 +9,9 @@ import HomePage from './pages/HomePage';
 import JobsPage from './pages/JobsPage';
 import NotFoundPage from './pages/NotFoundPage';
 import JobPage, { jobLoader } from './pages/JobPage';
-import AddJobPage from './pages/AddJobPage';
+import AddTransactionPage from './pages/AddTransactionPage';
 import EditJobPage from './pages/EditJobPage';
+import AccountTitle from './admin/AccountTitle';
 
 const App = () => {
   // Add New Job
@@ -50,7 +51,8 @@ const App = () => {
       <Route path='/' element={<MainLayout />}>
         <Route index element={<HomePage />} />
         <Route path='/transactions' element={<JobsPage />} />
-        <Route path='/add-transaction' element={<AddJobPage addJobSubmit={addJob} />} />
+        <Route path='/add-transaction' element={<AddTransactionPage addJobSubmit={addJob} />} />
+        <Route path='/account-title' element={<AccountTitle/>} />
         <Route
           path='/edit-job/:id'
           element={<EditJobPage updateJobSubmit={updateJob} />}

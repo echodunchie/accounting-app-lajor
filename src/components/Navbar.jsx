@@ -24,7 +24,7 @@ const Navbar = () => {
                   Home
                 </NavLink>
                 <NavLink to='/transactions' className={linkClass}>
-                  Browse Data
+                  Browse Transactions
                 </NavLink>
                 <NavLink to='/add-transaction' className={linkClass}>
                   Add Transaction

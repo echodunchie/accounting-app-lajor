@@ -21,13 +21,13 @@ const HomeCards = () => {
           <Card bg='bg-slate-100'>
             <h2 className='text-2xl font-bold'>For Admins</h2>
             <p className='mt-2 mb-4'>
-              List your job to find the perfect developer for the role
+              For Admin Stuffs
             </p>
             <Link
-              to='/transactions'
+              to='/account-title'
               className='inline-block bg-slate-500 text-white rounded-lg px-4 py-2 hover:bg-slate-600'
             >
-              Add Transaction
+              Add Account Title
             </Link>
           </Card>
         </div>
